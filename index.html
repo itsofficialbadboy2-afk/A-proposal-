@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>A Special Surprise 💍</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="stage1" class="container">
+        <div class="question-container">
+            <h1 class="snap-pulse" style="color: var(--pink-dark);">Will you be mine, Manuraa?💍</h1>
+        </div>
+        
+        <div class="button-wrapper" style="position: relative; height: 150px; margin-top: 30px;">
+            <button id="yesBtn" class="btn" style="position: absolute; left: 30%; top: 50%; transform: translate(-50%, -50%); transition: all 0.2s ease; padding: 15px 30px; font-size: 20px;">Yes</button>
+            <button id="noBtn" class="btn" style="position: absolute; left: 70%; top: 50%; transform: translate(-50%, -50%); transition: all 0.2s ease; padding: 15px 30px; font-size: 20px;">No</button>
+        </div>
+    </div>
+
+    <div id="stage2" class="container hidden">
+        <div class="letter-card">
+            <h2 style="color:var(--pink-dark); margin:0;">I am happy you are mine! <span class="snap-pulse" style="display:inline-block;">💍</span></h2>
+            <p style="font-size: 17px;">One day I will surely get on my knees and propose to you like in the movies… give you a ring to bind myself to you for the rest of eternity… but for now, I’ve made this little player for you to tell you how much you mean to me… you mean life to me… every day I can’t help but fall in love with you all over again… I love you, babe… always, forever</p>
+
+            <div class="player-card">
+                <div class="player-top">
+                    <img src="cover.jpg" alt="Art" class="album-art">
+                    <div class="song-info">
+                        <span class="song-name">Can't Help Falling in Love</span>
+                        <span class="artist-name">Elvis Presley / André Rieu</span>
+                    </div>
+                    <button id="playBtn" class="play-btn">▶</button>
+                </div>
+
+                <div class="progress-container" id="progressContainer">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <div class="time-info">
+                    <span id="currentTime">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+
+                <div class="controls">
+                    <button id="lyricsToggleBtn" class="btn action-btn" onclick="toggleLyrics()">Show Lyrics</button>
+                    <button class="btn action-btn" onclick="window.open('https://www.youtube.com/watch?v=c6Q4hPRgpEE', '_blank')">Watch Video</button>
+                </div>
+
+                <div id="lyricsPanel">
+                    <strong>Lyrics:</strong><br><br>
+                    Wise men say<br>
+                    Only fools rush in<br>
+                    But I can't help falling in love with you<br><br>
+                    Shall I stay?<br>
+                    Would it be a sin<br>
+                    If I can't help falling in love with you?<br><br>
+                    Like a river flows<br>
+                    Surely to the sea<br>
+                    Darling, so it goes<br>
+                    Some things are meant to be<br><br>
+                    <span class="highlight-line">Take my hand<br>
+                    Take my whole life, too</span><br>
+                    For I can't help falling in love with you<br><br>
+                    Like a river flows<br>
+                    Surely to the sea<br>
+                    Darling, so it goes<br>
+                    Some things are meant to be<br><br>
+                    <span class="highlight-line">Take my hand<br>
+                    Take my whole life, too</span><br>
+                    For I can't help falling in love with you<br>
+                    For I can't help falling in love with you
+                </div>
+
+                <audio id="myAudio" src="mysong.mp3"></audio>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
